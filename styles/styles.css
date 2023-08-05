@@ -14,10 +14,11 @@
   /* colors */
   --link-color: #035fe6;
   --link-hover-color: #136ff6;
-  --background-color: #fff;
+  --background-color: #FAF7F0;
   --overlay-background-color: #eee;
   --highlight-background-color: #ccc;
   --text-color: #000;
+
 
   /* fonts */
   --body-font-family: roboto, roboto-fallback;
@@ -248,4 +249,8 @@ main .section {
 /* section metadata */
 main .section.highlight {
   background-color: var(--highlight-background-color);
+}
+
+main .section.collections {
+  background-color: white;
 }

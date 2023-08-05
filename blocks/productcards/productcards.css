@@ -1,0 +1,43 @@
+.productcards > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 16px;
+}
+
+.productcards > ul > li {
+
+}
+
+.productcards .productcards-card-body {
+    margin: 16px;
+}
+
+.productcards .productcards-card-image {
+    line-height: 0;
+    background: var(--background-color);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 30%;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.17);
+}
+
+.productcards .productcards-card-image > picture {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.productcards .productcards-card-body > *:first-child {
+    margin-top: 0;
+}
+
+.productcards > ul > li img {
+    width: 90%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+
+}
