@@ -15,6 +15,10 @@
     margin: 16px;
 }
 
+.productcards .productcards-card-price {
+    color: red;
+}
+
 .productcards .productcards-card-image {
     line-height: 0;
     background: var(--background-color);
