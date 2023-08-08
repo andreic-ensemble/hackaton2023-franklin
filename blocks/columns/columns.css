@@ -1,3 +1,9 @@
+.default-content-wrapper h3{
+  margin: 4rem 0 1.8rem;
+  font-weight: 400;
+  color: #373640;
+}
+
 .columns > div {
   display: flex;
   flex-direction: column;
@@ -7,8 +13,21 @@
   width: 100%;
 }
 
-.columns > div > div {
-  order: 1;
+.columns > div > div > h4 {
+  font-weight: 800;
+  color: #373640;
+}
+
+.columns > div > div > p{
+  font-size: 1rem;
+}
+
+.columns > div > div > p > strong{
+  color: red;
+}
+
+.columns > div > div > p > span{
+  margin-right: 1.5rem;
 }
 
 .columns > div > .columns-img-col {

@@ -1,9 +1,8 @@
 import { createOptimizedPicture } from '../../scripts/lib-franklin.js';
 
 const processRow = (div, index) => {
-  if (div.children.length === 1 && div.querySelector('picture')) div.className = 'productcards-card-image';
-  else if (index === 2) div.className = 'productcards-card-price';
-  else div.className = 'productcards-card-body';
+  if (div.children.length === 1 && div.querySelector('picture')) div.className = 'releaseproducts-card-image';
+  else if (index === 2) div.className = 'releaseproducts-card-button';
 };
 
 export default function decorate(block) {
@@ -15,6 +14,8 @@ export default function decorate(block) {
     [...li.children].forEach((div, index) => {
       processRow(div, index);
     });
+    li.classList += li.children[1].innerText;
+    console.log(li.children[1]);
     ul.append(li);
   });
   ul.querySelectorAll('img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));

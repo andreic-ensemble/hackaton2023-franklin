@@ -1,0 +1,76 @@
+.releaseproducts > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-gap: 30px;
+}
+
+.releaseproducts > ul > li {
+    border-radius: 12px;
+    box-shadow: 0 4px 4px 0 rgb(0 0 0 / 17%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 270px;
+
+}
+
+.releaseproducts > ul > li:hover{
+    transition: 0.3s all;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.releaseproducts > ul > li > div:nth-child(2) {
+    display: none;
+}
+
+.releaseproducts .teal {
+    background-color: #CDFCF6;
+}
+
+.releaseproducts .purple {
+    background: #98A8F8;
+}
+
+.releaseproducts .black {
+    background: #61677A;
+}
+
+.releaseproducts .blue {
+    background: #BCCEF8;
+}
+
+.releaseproducts .green {
+    background: #C1FFD7;
+}
+
+.releaseproducts .button-container {
+    margin:0;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+.releaseproducts .releaseproducts-card-image {
+    line-height: 0;
+    background: var(--background-color);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 30%;
+}
+
+.releaseproducts .releaseproducts-card-image > img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+

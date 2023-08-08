@@ -1,0 +1,39 @@
+.aboutus > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-gap: 16px;
+    margin-top:3rem;
+}
+
+.aboutus > div > div:first-child {
+    position: relative;
+}
+
+.aboutus > div > div:first-child > p:first-child {
+    position: absolute;
+    left:1rem;
+    bottom:0.1rem;
+}
+
+.aboutus > div > div:first-child > p:nth-child(2) {
+    position: absolute;
+    right:5rem;
+}
+
+.aboutus > div > div:first-child > p:nth-child(3) {
+    position: absolute;
+    left:6rem;
+}
+
+@media (min-width: 900px) {
+    .aboutus > div {
+        align-items: center;
+        flex-direction: unset;
+        gap: 32px;
+    }
+
+    .aboutus > div > div {
+        flex: 1;
+        order: unset;
+    }
+}

@@ -1,0 +1,56 @@
+.landingpage > div {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.landingpage > div > div {
+    display: flex;
+    flex-direction: column;
+    gap:3rem;
+}
+
+.landingpage > div > div h1 {
+    padding-top: 2rem;
+    color: #373640;
+    font-weight: 900;
+}
+
+.landingpage > div > div .button-container a {
+    background: #98A8F8;
+    border:0;
+    color: #FFF;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    font-weight: 300;
+}
+
+.landingpage > div > .landingpage-img-col {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.landingpage > div > .landingpage-img-col > picture {
+    width: 70%;
+}
+
+.default-content-wrapper h3{
+    margin: 4rem 0 1.8rem;
+    font-weight: 400;
+    color: #373640;
+}
+
+
+@media (min-width: 900px) {
+    .columns > div {
+        align-items: center;
+        flex-direction: unset;
+        gap: 32px;
+    }
+
+    .columns > div > div {
+        flex: 1;
+        order: unset;
+    }
+}
