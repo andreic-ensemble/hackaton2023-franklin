@@ -5,8 +5,6 @@ const processRow = (div, index) => {
   else if (index === 2) div.className = 'releaseproducts-card-button';
 };
 
-const products = 'products';
-
 export default function decorate(block) {
   /* change to ul, li */
   const ul = document.createElement('ul');
@@ -22,6 +20,7 @@ export default function decorate(block) {
     li.addEventListener('click', () => {
       if (li.className === li.classList[0]) {
         const a = document.createElement('a');
+        const products = 'products';
         a.href = `http://localhost:3000/${products}/${productName}`;
         li.append(a);
         window.location.assign(a.href);

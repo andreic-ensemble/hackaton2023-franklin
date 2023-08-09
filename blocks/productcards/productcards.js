@@ -11,6 +11,16 @@ export default function decorate(block) {
   const ul = document.createElement('ul');
   [...block.children].forEach((row) => {
     const li = document.createElement('li');
+
+    const productBody = document.getElementsByTagName('strong');
+    const productName = productBody[0].innerText.toLocaleLowerCase().replace(' ', '');
+    li.addEventListener('click', () => {
+      const a = document.createElement('a');
+      const products = 'products';
+      a.href = `http://localhost:3000/${products}/${productName}`;
+      li.append(a);
+      window.location.assign(a.href);
+    });
     while (row.firstElementChild) li.append(row.firstElementChild);
     [...li.children].forEach((div, index) => {
       processRow(div, index);
