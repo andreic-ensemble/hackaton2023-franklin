@@ -17,7 +17,7 @@ export default function decorate(block) {
     li.addEventListener('click', () => {
       const a = document.createElement('a');
       const products = 'products';
-      a.href = `http://localhost:3000/${products}/${productName}`;
+      a.href = `/${products}/${productName}`;
       li.append(a);
       window.location.assign(a.href);
     });

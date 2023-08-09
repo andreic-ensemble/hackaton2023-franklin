@@ -153,6 +153,7 @@ header .nav-brand {
 header nav .nav-brand img {
   width: 128px;
   height: auto;
+  cursor: pointer;
 }
 
 /* sections */
@@ -162,6 +163,10 @@ header nav .nav-sections {
   display: none;
   visibility: hidden;
   background-color: var(--overlay-color);
+}
+
+.header nav .nav-sections > ul > li{
+  cursor: pointer;
 }
 
 header nav[aria-expanded="true"] .nav-sections {

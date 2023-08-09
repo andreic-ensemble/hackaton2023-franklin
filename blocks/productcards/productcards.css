@@ -35,7 +35,7 @@
 
 .productcards .productcards-card-image {
     line-height: 0;
-    background: var(--background-color);
+    background: #fff;
     border-radius: 12px;
     display: flex;
     align-items: center;
