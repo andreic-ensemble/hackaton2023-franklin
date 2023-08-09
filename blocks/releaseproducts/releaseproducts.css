@@ -29,6 +29,10 @@
     display: none;
 }
 
+.releaseproducts > ul > li > div:nth-child(3){
+    display: none;
+}
+
 .releaseproducts .teal {
     background-color: #CDFCF6;
 }
