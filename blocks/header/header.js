@@ -109,21 +109,22 @@ export default async function decorate(block) {
       if (section) section.classList.add(`nav-${c}`);
     });
 
-    const collections = 'collections';
-    const aboutUs = 'about-us';
+    // const collections = 'collections';
+    // const aboutUs = 'about-us';
 
     const navSections = nav.querySelector('.nav-sections');
-    const ul = navSections.querySelector('ul');
-    const li = ul.querySelector('li');
+    // const ul = navSections.querySelector('ul');
 
-    li.addEventListener('click', () => {
-      if (li.innerText === 'Collections') {
-        window.location.assign(`/${collections}`);
-      }
-      if (li.innerText === 'About Us') {
-        window.location.assign(`/#${aboutUs}`);
-      }
-    });
+    // const li = ul.querySelector('li');
+    //
+    // ul.addEventListener('click', () => {
+    //   if (li.innerText) {
+    //     window.location.assign(`/${collections}`);
+    //   }
+    //   if (li.innerText === ul.children[1].innerText) {
+    //     window.location.assign(`/#${aboutUs}`);
+    //   }
+    // });
     const navBrand = nav.querySelector('.nav-brand');
     navBrand.addEventListener('click', () => {
       window.location.assign('/');
